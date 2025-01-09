@@ -1,0 +1,39 @@
+.card {
+    background-color: #2a2b38; 
+    background-image: url('pat.svg'); 
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+}
+
+.custom-button {
+    background-color: #ffffcc;
+}
+
+.centered-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-placeholder::placeholder {
+    color: #f8f9fa;
+}
+
+.no-border {
+    border: none !important;
+}
+
+
+.form-check-input:checked {
+    background-color: #f6ff00;
+}
+
+.form-check-input:checked:focus {
+    border-color: #f6ff00 ;
+}
+
+.form-check-label {
+    margin-left: 10px;
+    color: #f8f9fa;
+}
