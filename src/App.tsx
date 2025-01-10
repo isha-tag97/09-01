@@ -7,12 +7,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 //bootstrap.min.js OR bundle
 import 'bootstrap/dist/js/bootstrap.bundle.js';
 import Singup from './Other/Singup.tsx';
+import Pre from './Rotate/Pre.tsx';
 
 function App() {
   return (
     <div>
       {/* <Login /> */}
       <Singup/>
+      {/* <Pre/> */}
     </div>
   );
 }

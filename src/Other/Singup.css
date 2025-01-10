@@ -1,19 +1,19 @@
+.body{
+    background-image: url('asset.svg');
+    background-color: red;
+}
 .card {
-    background-color: #2a2b38; 
-    background-image: url('pat.svg'); 
+    background-color: #2a2b38;
+    background-image: url('pat.svg');
     background-size: cover;
     background-position: center;
     border-radius: 8px;
+    transition: transform 1s ease-in-out;
 }
 
 .custom-button {
+    font-size: 13px;
     background-color: #ffffcc;
-}
-
-.centered-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .custom-placeholder::placeholder {
@@ -24,16 +24,92 @@
     border: none !important;
 }
 
-
 .form-check-input:checked {
-    background-color: #f6ff00;
+    background-color:#f7e99a;
 }
 
 .form-check-input:checked:focus {
-    border-color: #f6ff00 ;
+    border-color: #f7e99a;
 }
 
 .form-check-label {
     margin-left: 10px;
     color: #f8f9fa;
 }
+
+.toggle-switch-container {
+    gap: 10px;
+    color: #ffffff;
+}
+
+.toggle-option {
+    font-size: 14px;
+    font-weight: 500;
+    opacity: 0.5;
+}
+
+.toggle-option.active {
+    opacity: 1;
+}
+
+.toggle-switch {
+    width: 50px;
+    height: 24px;
+    background-color:#f7e99a;
+    border-radius: 12px;
+    padding: 2px;
+    cursor: pointer;
+    position: relative; /* Ensure it positions properly */
+}
+
+.toggle-slider {
+    width: 20px;
+    height: 20px;
+    background-color: #1b1e34;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+    position: absolute;
+    top: 2px; 
+    left: 2px; 
+}
+
+.toggle-slider.on {
+    transform: translateX(26px); 
+}
+
+.toggle-slider.off {
+    transform: translateX(0); 
+}
+
+.card.rotate-card {
+    transform: rotateY(90deg);
+}
+
+.icon {
+    color:#f7e99a;
+}
+
+.custom-shadow-yellow {
+    box-shadow: 0 2px 6px rgba(255, 255, 0, 0.5);
+}
+
+input::placeholder {
+    font-size: 10px !important;
+}
+/* -------- 4 turn(rotate)---- */
+.card1-2 div {
+    
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+  }.card3 {
+    grid-area: frontAndBack;
+  }
+  .card4 {
+    grid-area: frontAndBack;
+    transform: rotateY(-180deg);
+  }
+  .checkbox:checked~.card1 .card1-2 {
+    transform: rotateY(180deg);
+  }
+  
+  
